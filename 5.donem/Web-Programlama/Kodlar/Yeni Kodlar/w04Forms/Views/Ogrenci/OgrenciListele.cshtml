@@ -1,0 +1,19 @@
+﻿@model List<w04Forms.Models.Ogrenci>
+
+    <table>
+                <tr>
+                    <td>Öğrenci Ad</td>
+                    <td>Öğrenci Soyad</td>
+                    <td>Öğrenci Numara</td>
+                </tr>
+
+    @foreach(var ogr in @Model)
+    {
+                <tr>
+                        <td> @ogr.OgrenciAd </td>
+                        <td> @ogr.OgrenciSoyad </td>
+                        <td> @ogr.OgrenciNumara </td>
+                </tr>
+    }
+
+    </table>

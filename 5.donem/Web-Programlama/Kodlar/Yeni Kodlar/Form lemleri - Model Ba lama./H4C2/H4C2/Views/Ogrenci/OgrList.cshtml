@@ -1,0 +1,25 @@
+﻿@model List<Ogrenci>
+<div style="background-color:firebrick">@TempData["msj"]</div>
+    <table class="table table-striped">
+        <tr>
+            <th>Öğrenci Ad</th>
+            <th>Öğrenci Soyad</th>
+            <th>Öğrenci No</th>
+        </tr>
+    @if (Model.Count < 1)
+    {
+        <tr>
+            <td colspan="3">Herhangi bir öğrenci Yok</td>
+        </tr>
+    }else
+    {foreach (var ogr in Model)
+        {
+              <tr>
+                <td>@ogr.OgrAd</td>
+                <td>@ogr.OgrSoyad</td>
+                <td>@ogr.OgrNo</td>
+            </tr>   
+        }
+   
+    }
+</table>

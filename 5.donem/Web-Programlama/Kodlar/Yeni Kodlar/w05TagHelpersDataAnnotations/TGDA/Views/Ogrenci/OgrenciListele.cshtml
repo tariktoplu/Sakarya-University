@@ -1,0 +1,67 @@
+﻿@model IEnumerable<TGDA.Models.Ogrenci>
+
+@{
+    ViewData["Title"] = "Kayıtlı Öğrenciler";
+}
+
+<h1 class="text-danger"> @TempData["txtMSG"] </h1> <br />
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="OgrenciEklemeFormu">Yeni Öğrenci Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OgrenciAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OgrenciSoyad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OgrenciNumara)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OgrenciYas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OgrenciMail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OgrenciDogumTarihi)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrenciAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrenciSoyad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrenciNumara)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrenciYas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrenciMail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrenciDogumTarihi)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,36 @@
+﻿@model H92C.Models.Yazar
+
+
+
+<div>
+    <h4>Yazar Detay</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.YazarAd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.YazarAd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.YazarSoyad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.YazarSoyad)
+        </dd>
+    </dl>
+</div>
+@if (Model.Kitaplar.Count > 0)
+{
+    <ul>
+        @foreach (var kitap in Model.Kitaplar)
+        {
+            <li>@kitap.KtapAdi</li>
+        }
+    </ul>
+}
+else
+{
+    <div>Yazara ait haerhangi bir Kitap yok</div>
+}
+

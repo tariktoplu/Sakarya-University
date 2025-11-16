@@ -1,0 +1,10 @@
+﻿@{
+    var DataSes = Context.Session.GetString("SesUser");
+    var DataCook = Context.Request.Cookies["CookRenk"];
+}
+<h4>Buraya sadece Login olanlar girebilir</h4>
+
+<div>Login Kullanıcısı : @DataSes</div>
+<div style="background-color:@DataCook">Cookie Renk Seçimi : @DataCook</div>
+
+

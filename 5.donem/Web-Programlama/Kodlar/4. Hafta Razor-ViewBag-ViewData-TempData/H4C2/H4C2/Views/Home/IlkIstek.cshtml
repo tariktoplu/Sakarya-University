@@ -1,0 +1,13 @@
+﻿@{
+    string viewbag_msj = ViewBag.msj1;
+    string viewdata_msj = ViewData["msj2"].ToString();
+    string temp_msj = TempData["msj3"].ToString();
+}
+
+<h3>viewbag = @ViewBag.msj1</h3>
+<h3>viewData = @ViewData["msj2"]</h3>
+<h3>tempdata = @TempData["msj3"]</h3>
+<br />
+<h3>viewbag = @viewbag_msj</h3>
+<h3>viewData = @viewdata_msj</h3>
+<h3>tempdata = @temp_msj</h3>

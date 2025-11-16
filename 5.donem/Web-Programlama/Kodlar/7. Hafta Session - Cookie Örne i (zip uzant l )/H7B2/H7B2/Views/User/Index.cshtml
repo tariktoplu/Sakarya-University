@@ -1,0 +1,30 @@
+﻿@model H7B2.Models.User
+
+<div class="alert-danger">@TempData["msj"]</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UsrLogin" asp-controller="User">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UsrName" class="control-label"></label>
+                <input asp-for="UsrName" class="form-control" />
+                <span asp-validation-for="UsrName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsrPass" class="control-label"></label>
+                <input asp-for="UsrPass" class="form-control" />
+                <span asp-validation-for="UsrPass" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

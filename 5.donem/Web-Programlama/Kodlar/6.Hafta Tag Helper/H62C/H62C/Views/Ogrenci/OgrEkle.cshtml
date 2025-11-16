@@ -1,0 +1,35 @@
+﻿@model Ogrenci
+<form asp-controller="Ogrenci" asp-action="OgrKaydet">
+    <label asp-for="OgrAd"></label>
+    <input class="form-control" asp-for="OgrAd" />
+    <span asp-validation-for="OgrAd" class="text-danger"></span><br />
+    
+
+    <label asp-for="OgrSoyad"></label>
+    <input class="form-control" asp-for="OgrSoyad" />
+    <span asp-validation-for="OgrSoyad" class="text-danger"></span><br />
+  
+
+    <label asp-for="OgrNo"></label>
+    <input class="form-control"  asp-for="OgrNo" />
+    <span asp-validation-for="OgrNo" class="text-danger"></span><br />
+   
+
+    <label asp-for="OgrYas"></label>
+    <input class="form-control"  asp-for="OgrYas" />
+    <span asp-validation-for="OgrYas" class="text-danger"></span><br />
+    
+
+    <label asp-for="OgrDogumTarihi"></label>
+    <input class="form-control" asp-for="OgrDogumTarihi" />
+    <span asp-validation-for="OgrDogumTarihi" class="text-danger"></span>
+    <br />
+
+    <input type="submit" value="Formu Gönder" />
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

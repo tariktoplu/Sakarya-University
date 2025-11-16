@@ -1,0 +1,41 @@
+﻿@model IEnumerable<H92C.Models.Kitap>
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KtapAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KitapSayfasi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yazar)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KtapAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KitapSayfasi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Yazar.YazarAd)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.KitapID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.KitapID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.KitapID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

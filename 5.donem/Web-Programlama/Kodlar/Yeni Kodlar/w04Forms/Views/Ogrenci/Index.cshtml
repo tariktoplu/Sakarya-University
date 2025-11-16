@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Öğrenci Kayıt Formu";
+    // <!--  <h1>Öğrenci Kayıt Formu</h1> -->
+
+}
+<h2>@ViewData["Title"]</h2>
+<form method="post" action="../Ogrenci/Kaydet">
+    <table>
+            <tr>
+                <td>Öğrenci Adı:</td>
+                <td> <input type="text" name="OgrenciAd" /> </td>
+            </tr>
+            <tr>
+                <td>Öğrenci Soyadı:</td>
+                <td> <input type="text" name="OgrenciSoyad" /> </td>
+            </tr>
+            <tr>
+                <td>Öğrenci Numarası:</td>
+                <td> <input type="text" name="OgrenciNumara" /> </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="submit" name="sbmtKaydet" value="KAYDET" /> </td>
+            </tr>
+    </table>
+</form>

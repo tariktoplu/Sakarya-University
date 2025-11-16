@@ -1,0 +1,55 @@
+﻿@model IEnumerable<H5C2.Models.Ogrenci>
+
+
+<div style="background-color:red">@TempData["msj"]</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OgrAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OgrSoyad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OgrNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OgrYas)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count()<1)
+        {
+            <tr >
+                <td align="center" colspan="4">Herhangi Bir Öğrenci Kaydedilmedi</td>
+            </tr>
+        }else{
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                @Html.DisplayFor(modelItem => item.OgrAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrSoyad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OgrYas)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+        }
+}
+    </tbody>
+</table>

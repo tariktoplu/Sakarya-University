@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "g0Dm+/Six+M=",
+  "success": true,
+  "projectFilePath": "/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/w03Razor.csproj",
+  "expectedPackageFiles": [
+    "/home/tarik/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.21/microsoft.netcore.app.host.linux-x64.8.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,58 @@
+﻿@{
+    int x = 10;
+
+    int dakika = DateTime.Now.Minute;
+    string[] ogrenciler={"Ayşe","Burhan","Ömer","Hasan"};
+    int yil = DateTime.Now.Year;
+    string TmpDataAd = TempData["Ad"].ToString();
+    int ViewDataNo = (int)ViewData["no"];
+    string ViewBagData = ViewBag.msj;
+
+}
+
+<h3>TempData= @TempData["Ad"]</h3>
+<h3>ViewData = @ViewData["no"]</h3>
+<h3>VievBag= @ViewBag.msj</h3>
+
+
+<br />
+<hr />
+<h3> Öğrenci Eklendi Numarası = @x</h3>
+<br />
+
+<table width="300" height="50" border="1" class="table table-striped" >
+    <tr>
+        <td>SAAT</td>
+        <td>DAKİKA</td>
+    </tr>
+    <tr>
+        <td>@DateTime.Now.Hour</td>
+        <td>@dakika</td>
+    </tr>
+</table>
+<br />
+@for(var i=1;i<6;i++){
+    @i <br />
+}
+<br />
+
+<ul>
+    @for(var i = 1; i < 6; i++)
+    {
+        <li>@i</li>
+    }
+</ul>
+<br />
+
+<ol>
+    @foreach (var ogr in ogrenciler)
+    {
+        <li>@ogr</li>
+    }
+</ol>
+<hr />
+@if(yil % 4==0){
+    <h3>Artık yıl</h3>
+}else{
+    <h3>Artık y  ıl değil</h3>
+}

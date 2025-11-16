@@ -1,0 +1,47 @@
+﻿@model List<Ogrenci>
+
+
+
+
+
+@if (Model.Count>0)
+{
+    <h4>Öğrenciler Listeleniyor</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Öğrenci Ad
+                </th>
+                <th>
+                    Öğrenci Soyad
+                </th>
+                <th>
+                    Öğrenci No
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ogr in Model)
+            {
+                <tr>
+                    <td>
+                        @ogr.OgrAd
+                    </td>
+                    <td>
+                        @ogr.OgrSoyad
+                    </td>
+                    <td>
+                        @ogr.Ogrno
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div>Herhangi bir kayıt Yok</div>
+}

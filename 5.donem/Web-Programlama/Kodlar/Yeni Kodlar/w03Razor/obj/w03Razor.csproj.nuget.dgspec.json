@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/w03Razor.csproj": {}
+  },
+  "projects": {
+    "/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/w03Razor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/w03Razor.csproj",
+        "projectName": "w03Razor",
+        "projectPath": "/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/w03Razor.csproj",
+        "packagesPath": "/home/tarik/.nuget/packages/",
+        "outputPath": "/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/tarik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.21, 8.0.21]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

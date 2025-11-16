@@ -1,0 +1,12 @@
+﻿@{
+    var SUsr = Context.Session.GetString("SesUsr");
+    var CokRenk = Context.Request.Cookies["CookiRenk"];
+    var Sobj=  Context.Session.GetString("SesObj");
+}
+<div class="alert-danger">@TempData["msj"]</div>
+<h4>Buraya sadece Login olanlar girebilir</h4>
+
+<div>Session Datası : @SUsr</div>
+<div style="background-color:@CokRenk"> Cookie Datası : @CokRenk</div>
+<br />
+<div>Session Obje Datası : @Sobj</div>

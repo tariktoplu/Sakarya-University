@@ -1,0 +1,125 @@
+﻿@*
+    // Yorum Satırı
+    // 2. Yorum satırı...
+*@
+
+@{
+    // Kod aralığı @{ ile başlar
+    // } ile biter
+
+    //HTML arasına yazmaya başlamak için @ ile yazılır
+}
+
+<h1> RAZOR ÖRNEKLERİ </h1>
+<h2> Sunucu zaman bilgisi: @DateTime.Now.ToShortDateString() </h2>
+
+@{
+    var Tarih = DateTime.Now.ToShortDateString();
+    var txt = "Merhaba";
+}
+
+<hr />
+
+<h3> @Tarih </h3>
+<h3> @txt BSM 311 - Web Programlama </h3>
+
+@*
+    // C# kodları  içerisine yazalım
+*@
+
+@{
+    var txtDersKod = "BSM 311";
+
+    @: Web Programlama Dersi <b> @txtDersKod </b>
+}
+
+<table class="table table-striped">
+    <tr>
+            <th>Değişken</th>
+            <th>Değer</th>
+    </tr>
+    <tr>
+            <td>Saat</td>
+            <td> @DateTime.Now.Hour </td>
+    </tr>
+    <tr>
+            <td>Dakika</td>
+            <td> @DateTime.Now.Minute </td>
+    </tr>
+    <tr>
+            <td>Saniye</td>
+            <td> @DateTime.Now.Second </td>
+    </tr>
+</table>
+
+<hr />
+
+@for (var i = 1; i<10; ++i)
+{
+    @: i değişkeninin değeri: <b> @i </b> <br>
+}
+
+
+<hr />
+
+@{
+    // Öğrenci Listesi
+
+    string[] Ogrenciler = {"Umay", "Ülgen", "Mergen", "Gündüz", "Göktürk" };
+
+    string ArananKisi = "Gündüz";
+
+    int KacinciSirada = Array.IndexOf(Ogrenciler, ArananKisi) + 1;
+
+    int KisiSayisi = Ogrenciler.Length;
+}
+
+<h3> Listedeki Öğrenciler </h3>
+
+@foreach(var Ogr in Ogrenciler)
+{
+    <p> @Ogr </p>    
+}
+
+<h2> Aranan öğrenci: @ArananKisi</h2>
+
+<p> Listedeki yeri/sırası: @KacinciSirada </p>
+
+<p>Listede toplam @KisiSayisi öğrenci bulunmaktadır. </p>
+
+
+@{
+    int HaftaninGunu = (int)DateTime.Now.DayOfWeek;
+    string gun = "";
+
+    string[] gunler = {"Pazar", "Pazartesi", "Salı", "Çarşambaaaa", "Perş"};
+
+    switch(HaftaninGunu)
+    {
+        case 0:
+            gun = "Pazar";
+            break;
+        case 1:
+            gun = "Pazartesi";
+            break;
+        case 2:
+            gun = "Salı";
+            break;
+        case 3:
+            gun = "Çarşamba";
+            break;
+        case 4:
+            gun = "Perşembe";
+            break;
+        case 5:
+            gun = "Cuma";
+            break;
+        case 6:
+            gun = "Cumartesi";
+            break;
+    }
+}
+
+    <h2> Bugün günlerden: <b> @gun </b> </h2>
+
+    <h3> Aynı zamanda yine günlerden @gunler[HaftaninGunu+1] </h3>

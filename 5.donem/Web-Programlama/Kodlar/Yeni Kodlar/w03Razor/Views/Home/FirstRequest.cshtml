@@ -1,0 +1,16 @@
+﻿@{
+    string VBtxt = ViewBag.VBmesaj;
+    string VDtxt = ViewData["VDmesaj"].ToString();
+    string TDtxt = TempData["TDmesaj"].ToString();
+}
+
+<h2> @ViewBag.VBmesaj </h2>
+<h2> @ViewData["VDmesaj"]</h2>
+<h2> @TempData["TDmesaj"]</h2>
+<h2> @TempData["Sayi"]</h2>
+
+<hr />
+
+<h2> @VBtxt </h2>
+<h2> @VDtxt </h2>
+<h2> @TDtxt </h2>

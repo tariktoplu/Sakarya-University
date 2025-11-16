@@ -1,0 +1,13 @@
+﻿@{
+    string msj1 = ViewBag.msj1;
+    string msj2 = ViewData["msj2"].ToString();
+    string msj3 = (string)TempData["msj3"];
+}
+
+<div style="color:red;">ViewBag =@msj1</div>
+<div style="color:orangered;">ViewData =@msj2</div>
+<div style="color:brown;">TempData =@msj3</div>
+<br /><br />
+<div style="color:red;">ViewBag =@ViewBag.msj1</div>
+<div style="color:orangered;">ViewData =@ViewData["msj2"]</div>
+<div style="color:brown;">TempData =@TempData["msj3"]</div>

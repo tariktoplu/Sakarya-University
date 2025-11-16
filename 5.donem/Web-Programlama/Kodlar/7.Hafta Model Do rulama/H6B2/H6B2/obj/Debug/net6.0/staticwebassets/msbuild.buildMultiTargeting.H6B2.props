@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\H6B2.props" />
+</Project>

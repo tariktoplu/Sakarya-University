@@ -1,0 +1,48 @@
+﻿@model H5C2.Models.Ogrenci
+
+@{
+    ViewData["Title"] = "OgrEkleOto";
+}
+
+
+
+<h4>Ogrenci Ekleme</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="OgrKaydet">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="OgrAd" class="control-label"></label>
+                <input asp-for="OgrAd" class="form-control" />
+                <span asp-validation-for="OgrAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OgrSoyad" class="control-label"></label>
+                <input asp-for="OgrSoyad" class="form-control" />
+                <span asp-validation-for="OgrSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OgrNo" class="control-label"></label>
+                <input asp-for="OgrNo" class="form-control" />
+                <span asp-validation-for="OgrNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OgrYas" class="control-label"></label>
+                <input asp-for="OgrYas" class="form-control" />
+                <span asp-validation-for="OgrYas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

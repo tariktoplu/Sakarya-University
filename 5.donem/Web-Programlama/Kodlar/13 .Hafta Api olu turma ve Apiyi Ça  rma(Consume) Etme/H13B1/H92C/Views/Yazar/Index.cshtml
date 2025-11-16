@@ -1,0 +1,35 @@
+﻿@model IEnumerable<H92C.Models.Yazar>
+
+
+    <a asp-action="YazarEkle">Yeni Yazar Ekle</a>
+<div class="alert-danger"> @TempData["msj"]</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.YazarAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YazarSoyad)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.YazarAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YazarSoyad)
+            </td>
+            <td>
+                <a asp-action="YazarDuzenle" asp-route-id="@item.YazarID">Yazar Düzenle</a> |
+                <a asp-action="YazarDetay" asp-route-id="@item.YazarID">Yazar Detay</a> |
+                <a asp-action="YazarSil" asp-route-id="@item.YazarID">Yazar Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

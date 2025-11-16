@@ -1,0 +1,61 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = w03Razor
+build_property.RootNamespace = w03Razor
+build_property.ProjectDir = /home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/Views/Home/FirstRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9GaXJzdFJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/Views/Home/RazorDeneme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9SYXpvckRlbmVtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/Views/Home/SecondRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZWNvbmRSZXF1ZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tarik/Masaüstü/5.donem/Web-Programlama/Kodlar/Yeni Kodlar/w03Razor/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qboqmsm2sv
