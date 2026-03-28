@@ -1,0 +1,8 @@
+
+1. Algoritma büyüme hızlarının karşılaştırılması
+
+2. Matris Zinciri Çarğımı (Dinamik Programlama)
+
+3. Sırt Çantası Problemi(Dinamik Programlama/Greedy) Tasarım tekniklerinin karşılaştırılması
+
+4. a)Master Teoremi ile analiz.b) Sözde kod üzerinden algoritma analizi (analiz tekniklerinden hangisi terciedilirse)
