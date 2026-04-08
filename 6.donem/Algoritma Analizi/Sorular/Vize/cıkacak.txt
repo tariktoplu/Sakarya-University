@@ -1,8 +1,9 @@
+. Farklı Algoritma büyüme hızlarının karşılaştırılması (okey)
 
-1. Algoritma büyüme hızlarının karşılaştırılması
+2. Sözde kod olarak verilen bir algoritmanın hesaplama ve bellek maliyetinin hesaplanması (okey)
 
-2. Matris Zinciri Çarğımı (Dinamik Programlama)
+3. Master Teoremi (Böl ve yönet) ile algoritma analizi (okey)
 
-3. Sırt Çantası Problemi(Dinamik Programlama/Greedy) Tasarım tekniklerinin karşılaştırılması
+4. Dinamik Programlama/Greedy (Matris Zinciri Çarpımı(okey), En uzun ortak Alt Katar Problemi, Sırt Çantası)
 
-4. a)Master Teoremi ile analiz.b) Sözde kod üzerinden algoritma analizi (analiz tekniklerinden hangisi terciedilirse)
+5. Brute Force/Divide& Conquer/Dynamic Programming/Decrase &Conquer/Greedy yaklaşımlarının genel olarak ve birbiriyle karşılaştırılması.
